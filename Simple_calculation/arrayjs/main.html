@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ContactList</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      NAME :
+      <input
+        type="text"
+        id="fname"
+        class="ml-lg-3 mt-5"
+        placeholder="Enter Name"
+      />
+
+      CONTACT:
+      <input
+        type="text"
+        id="phone"
+        class="ml-2 mt-5"
+        placeholder="Enter Mobile"
+      />
+      <button
+        type="submit"
+        class="btn btn-success ml-4"
+        onclick="addNewRecord();"
+      >
+        ADD
+      </button>
+
+      <button type="submit" class="btn btn-danger ml-4" onclick="clearValue()">
+        CLEAR
+      </button>
+         <!--------------------------->
+    <div class="container mt-5">
+      <table class="table" id="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Mobile</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>33344567778</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>33344567778</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!---------------------------->
+    <script>
+                var items = [];
+
+      function addNewRecord() {
+
+        name = document.getElementById("fname").value;
+        phone = document.getElementById("phone").value;
+
+        items.push(name, phone);
+        console.log(items);
+        for (var i = 0; i < items.length; i++) {
+          // create a new row
+          var newRow = table.insertRow(table.length);
+          // create a new cell
+          var cell3 = newRow.insertCell(`<button
+        type="submit"
+        class="btn btn-danger ml-4"
+        onclick="deleteRow(this)"
+      >
+        DELETE
+      </button>
+`);
+          var cell4 = newRow.insertCell(`<button
+        type="submit"
+        class="btn btn-danger ml-4"
+        onclick="editvalue()"
+      >
+        EDIT
+      </button>
+`);
+
+          var cell = newRow.insertCell(i);
+          var cell2 = newRow.insertCell(i + 1);
+
+          // add value to the cell
+          cell.innerHTML = items[i];
+          cell2.innerHTML = items[i + 1];
+          cell3.innerHTML = `<td><button
+        type="submit"
+        class="btn btn-danger ml-1"
+        onclick="deleteRow(this)"
+      >
+        DELETE
+      </button></td>`;
+          cell4.innerHTML = ` <td><button
+        type="submit"
+        class="btn btn-primary ml-1"
+        onclick="editvalue()"
+      >
+        EDIT
+      </button></td>
+`;
+
+          items = [];
+          console.log(items);
+        }
+      }
+
+      /************************************/
+      function clearValue() {
+        var name = (document.getElementById("fname").value = ""),
+          phone = (document.getElementById("phone").value = "");
+      }
+      /**********************************************/
+      function editvalue(){
+    var name = document.getElementById("fname").value;
+
+      }
+
+      /**********************************************/
+function deleteRow(r) {
+  var i = r.parentNode.parentNode.rowIndex;
+  document.getElementById("table").deleteRow(i);
+}
+      
+    </script>
+  </body>
+</html>
