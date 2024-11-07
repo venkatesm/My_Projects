@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h3>
+        DISPLAY<br />
+        1.flex<br />2.inline flex
+      </h3>
+    </div>
+    <div class="container display">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+      <div class="flex-item item6">item6</div>
+      <div class="flex-item item7">item7</div>
+      <div class="flex-item item8">item8</div>
+      <div class="flex-item item9">item9</div>
+    </div>
+    <div>
+      <h3>
+        DISPLAY PROPERTY - items imediately laid out left to right instead of
+        traditional way div -top to bottom.
+      </h3>
+    </div>
+    <div>
+      ***************************************************************************************************************************************************************
+    </div>
+    <h3>
+      INLINE DISPLAY - Container takes 100% width like block level element. if
+      we do not want block level. we set display property -INLINE FLEX
+    </h3>
+    <div class="container inline-display">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+      <div class="flex-item item6">item6</div>
+      <div class="flex-item item7">item7</div>
+      <div class="flex-item item8">item8</div>
+      <div class="flex-item item9">item9</div>
+    </div>
+    <h3>
+      now border wraps around the flex items. the container only takes enough
+      width to accommodate its children
+    </h3>
+
+    <div>
+      ***************************************************************************************************************************************************************
+    </div>
+
+    <h3>
+      FLEX-DIRECTION - establishes main axes intern decides how the flex items
+      placed inside flex container. by Default Main axes flows from left to
+      right.reson item is placed from left.
+    </h3>
+    <h2>FLEX DIRECTION-ROW</h2>
+    <h3>
+      default value,it doest make any difference.direction of ROW sets main axes
+      from LEFT to RIGHT
+    </h3>
+    <div class="container flex-direction1">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+      <div class="flex-item item6">item6</div>
+      <div class="flex-item item7">item7</div>
+      <div class="flex-item item8">item8</div>
+      <div class="flex-item item9">item9</div>
+    </div>
+
+    <div>
+      ***************************************************************************************************************************************************************
+    </div>
+    <h2>FLEX DIRECTION - ROW-REVERSE</h2>
+    <h3>Direction of ROW sets main axes from RIGHT to LEFT</h3>
+    <div class="container flex-direction2">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+      <div class="flex-item item6">item6</div>
+      <div class="flex-item item7">item7</div>
+      <div class="flex-item item8">item8</div>
+      <div class="flex-item item9">item9</div>
+    </div>
+
+    <div>
+      ***************************************************************************************************************************************************************
+    </div>
+    <h2>FLEX DIRECTION-COLUMN</h2>
+    <h3>column top to bottom order</h3>
+    <div class="container flex-direction3">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+      <div class="flex-item item6">item6</div>
+      <div class="flex-item item7">item7</div>
+      <div class="flex-item item8">item8</div>
+      <div class="flex-item item9">item9</div>
+    </div>
+
+    <div>
+      ***************************************************************************************************************************************************************
+    </div>
+
+    <h2>FLEX DIRECTION-COLUMN-REVERSE</h2>
+    <h3>column bottom to top order</h3>
+    <div class="container flex-direction4">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+      <div class="flex-item item6">item6</div>
+      <div class="flex-item item7">item7</div>
+      <div class="flex-item item8">item8</div>
+      <div class="flex-item item9">item9</div>
+    </div>
+
+    <div>
+      ***************************************************************************************************************************************************************
+    </div>
+
+    <h2>FLEX WRAP</h2>
+    <h3>
+      by default all flex items in the container will try to fit into single
+      line if there is not enough space items simply overflow. if i reduce
+      browser widthit begins to shrink and then no longer view
+    </h3>
+    <div class="container flex-wrap1">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+      <div class="flex-item item6">item6</div>
+      <div class="flex-item item7">item7</div>
+      <div class="flex-item item8">item8</div>
+      <div class="flex-item item9">item9</div>
+    </div>
+
+    <div>
+      ***************************************************************************************************************************************************************
+    </div>
+
+    <h2>FLEX WRAP</h2>
+    <h3>
+      control the wrapping of flex items within the container<br />1.nowrap<br />2.wrap<br />3.wrap-reverse
+    </h3>
+    <h3>
+      <h2>NO WRAP</h2>
+
+      by default all flex items in the container will try to fit into single
+      line if there is not enough space items simply overflow. if i reduce
+      browser widthit begins to shrink and then no longer view
+    </h3>
+    <div class="container flex-wrap1">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+      <div class="flex-item item6">item6</div>
+      <div class="flex-item item7">item7</div>
+      <div class="flex-item item8">item8</div>
+      <div class="flex-item item9">item9</div>
+    </div>
+
+    <div>
+      ***************************************************************************************************************************************************************
+    </div>
+
+    <h3>
+      <h2>WRAP</h2>
+      We want to wrap items within the container we set value WRAP
+    </h3>
+    <div class="container flex-wrap2">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+      <div class="flex-item item6">item6</div>
+      <div class="flex-item item7">item7</div>
+      <div class="flex-item item8">item8</div>
+      <div class="flex-item item9">item9</div>
+    </div>
+    <h3>
+      we can see that items has wrapped into the container wrapping takes places
+      when they needed
+    </h3>
+
+    <div>
+      ***************************************************************************************************************************************************************
+    </div>
+
+    <h3>
+      <h2>WRAP-REVERSE</h2>
+      by default wrap the element will be on bottom. if we give wrap-reverse
+      over flow elements will be wrap on top
+    </h3>
+    <div class="container flex-wrap3">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+      <div class="flex-item item6">item6</div>
+      <div class="flex-item item7">item7</div>
+      <div class="flex-item item8">item8</div>
+      <div class="flex-item item9">item9</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+    <h2>WRAP</h2>
+    <h3>with height</h3>
+    <div class="container flex-wrap4">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+      <div class="flex-item item6">item6</div>
+      <div class="flex-item item7">item7</div>
+      <div class="flex-item item8">item8</div>
+      <div class="flex-item item9">item9</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+    <h2>FLEX FLOW</h2>
+
+    <h3>
+      shortend combination of flex directon and flex wrap first value will be
+      FLEX-DIRECTION and second value is FLEX-WRAP
+    </h3>
+
+    <div class="container flex-flow">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+      <div class="flex-item item6">item6</div>
+      <div class="flex-item item7">item7</div>
+      <div class="flex-item item8">item8</div>
+      <div class="flex-item item9">item9</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+
+    <h2>FLEX FLOW with height</h2>
+
+    <div class="container flex-flow1">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+      <div class="flex-item item6">item6</div>
+      <div class="flex-item item7">item7</div>
+      <div class="flex-item item8">item8</div>
+      <div class="flex-item item9">item9</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+
+    <h2>JUSTIFY-CONTENT</h2>
+    <h3>
+      justify content property aligns items any extra spacing in the parent
+      container.the alignment is always along the main axis<br />
+      1.flex-start<br />2.flex-end<br />3.center<br />4.space-between<br />5.space-around<br />6.space-evenly
+    </h3>
+    <h3>FLEX-START</h3>
+    <h3>which places the flex item at the beginning of the container</h3>
+
+    <div class="container flex-justifycontent1">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+    <h2>JUSTIFY-CONTENT</h2>
+    <h3>FLEX-END</h3>
+    <h3>which places the flex item at the END of the container</h3>
+
+    <div class="container flex-justifycontent2">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+    <h2>JUSTIFY-CONTENT</h2>
+    <h3>CENTER</h3>
+    <h3>which places the flex item at the middle of the container</h3>
+
+    <div class="container flex-justifycontent3">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+
+    <h2>JUSTIFY-CONTENT</h2>
+    <h3>SPACE BETWEEN</h3>
+    <h3>its evenly splits and added inbetween flex items</h3>
+
+    <div class="container flex-justifycontent4">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+
+    <h2>JUSTIFY-CONTENT</h2>
+    <h3>SPACE AROUND</h3>
+    <h3>
+      its evenly splits and added space at the beginning and end of the flex
+      items
+    </h3>
+
+    <div class="container flex-justifycontent5">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+
+    <h2>JUSTIFY-CONTENT</h2>
+    <h3>SPACE EVENLY</h3>
+    <h3>
+      its evenly splits and added space at the beginning and end of the flex
+      space equally items
+    </h3>
+
+    <div class="container flex-justifycontent6">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+    <h2>ALIGN-ITEMS</h2>
+    <h3>
+      how items along with cross axis<br />
+      1.flex-start<br />2.flex-end<br />3.center<br />4.baseline<br />stretch
+    </h3>
+    <h3>STRETCH</h3>
+    <h3>stretch is the default value it stretch from the top to bottom</h3>
+
+    <div class="container flex-alignitem1">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+    <h2>ALIGN-ITEMS</h2>
+    <h3>FLEX START</h3>
+    <h3>it will be on top on cross axis</h3>
+
+    <div class="container flex-alignitem2">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+    <h2>ALIGN-ITEMS</h2>
+    <h3>FLEX END</h3>
+    <h3>it will be on bottom along cross axis</h3>
+
+    <div class="container flex-alignitem3">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+    <h2>ALIGN-ITEMS</h2>
+    <h3>CENTER</h3>
+    <h3>all items on the center along cross axis</h3>
+
+    <div class="container flex-alignitem4">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+    <h2>JUSTIFY-CONTENT</h2>
+    <h3>BASELINE</h3>
+    <h3>
+      text inside each item is aligned. item itself positioned on where text
+      will sit.
+    </h3>
+
+    <div class="container flex-alignitem5">
+      <div class="flex-item item1 baseline1">item1</div>
+      <div class="flex-item item2 baseline2">item2</div>
+      <div class="flex-item item3 baseline3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+    <h2>ALIGN CONTENT</h2>
+    <h3>like justify content but in main axis it works only on multiple row</h3>
+    <h3>STRETCH</h3>
+    <h3>stretch is the default value</h3>
+
+    <div class="container flex-aligncontent1">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+    <h2>ALIGN CONTENT</h2>
+    <h3>FLEX START</h3>
+    <h3>all flex items are in top of the container</h3>
+
+    <div class="container flex-aligncontent2">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+      <div class="flex-item item6">item5</div>
+      <div class="flex-item item7">item5</div>
+      <div class="flex-item item8">item5</div>
+      <div class="flex-item item9">item5</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+    <h2>ALIGN CONTENT</h2>
+    <h3>FLEX END</h3>
+    <h3>all flex items are in end of the container</h3>
+
+    <div class="container flex-aligncontent3">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+      <div class="flex-item item6">item6</div>
+      <div class="flex-item item7">item7</div>
+      <div class="flex-item item8">item8</div>
+      <div class="flex-item item9">item9</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+    <h2>ALIGN CONTENT</h2>
+    <h3>CENTER</h3>
+    <h3></h3>
+
+    <div class="container flex-aligncontent4">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+      <div class="flex-item item6">item6</div>
+      <div class="flex-item item7">item7</div>
+      <div class="flex-item item8">item8</div>
+      <div class="flex-item item9">item9</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+
+    <h2>ALIGN CONTENT</h2>
+    <h3>SPACE BETWEEN</h3>
+    <h3>
+      initial state flex item on top after minimizing the width overflow flex
+      will be on bottom and then middle. there will be a space in between
+    </h3>
+
+    <div class="container flex-aligncontent5">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+      <div class="flex-item item6">item6</div>
+      <div class="flex-item item7">item7</div>
+      <div class="flex-item item8">item8</div>
+      <div class="flex-item item9">item9</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+    <h2>ALIGN CONTENT</h2>
+    <h3>SPACE AROUND</h3>
+    <h3>
+      initial state flex item on middle after minimizing the width overflow flex
+      will be on bottom and then top. there will be a space around
+    </h3>
+
+    <div class="container flex-aligncontent6">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+      <div class="flex-item item4">item4</div>
+      <div class="flex-item item5">item5</div>
+      <div class="flex-item item6">item6</div>
+      <div class="flex-item item7">item7</div>
+      <div class="flex-item item8">item8</div>
+      <div class="flex-item item9">item9</div>
+    </div>
+
+    <div>
+      *************************************************************************************************************************************************************
+    </div>
+  </body>
+</html>

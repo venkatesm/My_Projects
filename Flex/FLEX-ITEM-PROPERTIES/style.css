@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+}
+.container {
+  border: 6px solid black;
+}
+h2 {
+  color: brown;
+}
+.display {
+  display: flex; /* display property**/
+}
+.flex-item {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  width: 8rem;
+}
+/** order**/
+.order1 {
+  order: 1;
+}
+.order2 {
+  order: 2;
+}
+.item1 {
+  background-color: rgb(37, 71, 71);
+}
+.item2 {
+  background-color: rgb(209, 115, 52);
+}
+.item3 {
+  background-color: rgb(23, 43, 73);
+}
+.item4 {
+  background-color: rgb(38, 71, 31);
+}
+.item5 {
+  background-color: rgb(95, 105, 38);
+}
+.item6 {
+  background-color: rgb(116, 50, 24);
+}
+.item7 {
+  background-color: rgb(10, 104, 88);
+}
+.item8 {
+  background-color: rgb(71, 23, 57);
+}
+.item9 {
+  background-color: rgb(160, 50, 65);
+}
+/** flex grow**/
+.grow1 {
+  flex-grow: 1;
+}
+/** flex shrink
+.shrink1 {
+  flex-shrink: 4;
+}**/

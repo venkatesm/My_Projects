@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+}
+.container {
+  border: 6px solid black;
+}
+h2 {
+  color: brown;
+}
+.display {
+  display: flex; /* display property**/
+}
+/* inline flex property **/
+/*  Container takes 100% width like
+        block level element. if we do not want block level. we set display
+        property -INLINE FLEX**/
+.inline-display {
+  display: inline-flex;
+}
+/** flex Direction row**/
+.flex-direction1 {
+  display: flex;
+  flex-direction: row;
+}
+/** flex-Direction row-reverse**/
+.flex-direction2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+/** flex-Direction column**/
+
+.flex-direction3 {
+  display: flex;
+  flex-direction: column;
+}
+/** flex-Direction column-reverse**/
+.flex-direction4 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+/* flex-NO wrap*/
+.flex-wrap1 {
+  display: flex;
+  flex-wrap: nowrap;
+}
+/* flex- wrap*/
+.flex-wrap2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* flex- wrap*/
+.flex-wrap3 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.flex-wrap4 {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  flex-wrap: wrap;
+}
+/** flex flow**/
+.flex-flow {
+  display: flex;
+  flex-flow: row wrap;
+}
+/** flex flow with height**/
+.flex-flow1 {
+  display: flex;
+  flex-flow: row wrap;
+  height: 300px;
+}
+/** justify-content- flex start**/
+.flex-justifycontent1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/** justify-content**/
+
+.flex-justifycontent2 {
+  display: flex;
+  justify-content: flex-end;
+}
+/** justify-content**/
+
+.flex-justifycontent3 {
+  display: flex;
+  justify-content: center;
+}
+/** justify-content**/
+
+.flex-justifycontent4 {
+  display: flex;
+  justify-content: space-between;
+}
+/** justify-content**/
+
+.flex-justifycontent5 {
+  display: flex;
+  justify-content: space-around;
+}
+.flex-justifycontent6 {
+  display: flex;
+  justify-content: space-evenly;
+}
+/**align-item**/
+.flex-alignitem1 {
+  display: flex;
+  height: 400px;
+  align-items: stretch;
+}
+/**align-item**/
+.flex-alignitem2 {
+  display: flex;
+  height: 400px;
+  align-items: flex-start;
+}
+/**align-item**/
+.flex-alignitem3 {
+  display: flex;
+  height: 400px;
+  align-items: flex-end;
+}
+/**align-item**/
+.flex-alignitem4 {
+  display: flex;
+  height: 400px;
+  align-items: center;
+}
+/**align-item**/
+.flex-alignitem5 {
+  display: flex;
+  height: 400px;
+  align-items: baseline;
+}
+/** flex- aligncontent**/
+.flex-aligncontent1 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+/** flex- aligncontent**/
+.flex-aligncontent2 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+/** flex- aligncontent**/
+.flex-aligncontent3 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+/** flex- aligncontent**/
+.flex-aligncontent4 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: center;
+}
+/** flex- aligncontent**/
+.flex-aligncontent5 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+/** flex- aligncontent**/
+.flex-aligncontent6 {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.flex-item {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+.item1 {
+  background-color: rgb(37, 71, 71);
+}
+.item2 {
+  background-color: rgb(209, 115, 52);
+}
+.item3 {
+  background-color: rgb(23, 43, 73);
+}
+.item4 {
+  background-color: rgb(38, 71, 31);
+}
+.item5 {
+  background-color: rgb(95, 105, 38);
+}
+.item6 {
+  background-color: rgb(116, 50, 24);
+}
+.item7 {
+  background-color: rgb(10, 104, 88);
+}
+.item8 {
+  background-color: rgb(71, 23, 57);
+}
+.item9 {
+  background-color: rgb(160, 50, 65);
+}
+.baseline1 {
+  padding-bottom: 3rem;
+}
+.baseline2 {
+  padding-bottom: 5rem;
+}
+.baseline3 {
+  font-size: 3rem;
+}
