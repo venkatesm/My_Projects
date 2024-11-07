@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+    <style>
+      input[type="text"] {
+        margin-top: 30px;
+        width: 500px;
+      }
+      .label {
+        color: rgb(156, 30, 140);
+        font-weight: 800;
+        font-size: 20px;
+      }
+      .box {
+        border: 1px solid rgb(202, 196, 196);
+        width: 100%;
+        height: 800px;
+      }
+      .btn1 {
+        margin-top: 50px;
+        background-color: rgb(134, 55, 128);
+        width: 100px;
+        padding: 9px;
+        color: aliceblue;
+        font-weight: 600;
+        border: none;
+      }
+      #error {
+        margin-top: 20px;
+        font-weight: 500;
+      }
+      .box2 {
+        width: 400px;
+        height: 300px;
+        margin-left: 350px;
+        margin-top: 50px;
+        box-shadow: 0 0 10px rgb(204, 203, 203);
+      }
+      .box3 {
+        width: 300px;
+        height: 150px;
+        margin-left: 50px;
+        margin-top: 50px;
+        box-shadow: 0 0 20px rgb(40, 168, 201);
+      }
+      .box4 {
+        text-align: center;
+        color: red;
+        box-shadow: 0 0 10px rgb(204, 203, 203);
+        width: 200px;
+        height: 80px;
+        margin-left: 450px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container text-center">
+      <div class="box">
+        <h1 style="color: rgb(31, 31, 66)">WEATHER API</h1>
+        <div class="form">
+          <span style="color: red" id="error"></span><br />
+
+          <labe1 class="label">Location :</labe1>
+          <input type="text" id="location" /><br />
+          <button class="btn1" id="sub">Submit</button>
+        </div>
+        <div class="box2 text-center mt-5">
+          <h4 style="color: rgb(113, 189, 189)">Weather Report</h4>
+          <h3 id="name">City Name :India</h3>
+          <div class="box3">
+            <h6 id="country">country:IN</h6>
+
+            <h6 id="temp">temp:30.00</h6>
+            <h6 id="humid">humidity:30.00</h6>
+            <h6 id="wind">Wind speed:30.00</h6>
+            <h6 id="pressure">Pressure:30.00</h6>
+          </div>
+        </div>
+        <div id="error1" class="box4">
+          <h4 id="gg">City name invalid</h4>
+          <h4 id="ee">Status Code :200</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $(".box4").hide();
+
+    $("#sub").click(function () {
+      var location = $("#location").val();
+      console.log(location);
+      if (location != "") {
+        $("#error").html("");
+
+        $.ajax({
+          url:
+            " http://api.openweathermap.org/data/2.5/weather?q=" +
+            location +
+            "&units=metric" +
+            "&APPID=2d8ac7e5e0cf5feebd8612a562c11a30",
+          type: "get",
+          // dataType: "jsonp",
+          statusCode: {
+            404: function () {
+              $("#gg").html("Invalid City name");
+              $("#ee").html("StatusCode : " + " " + 404);
+              $(".box3").hide();
+              $(".box2").hide();
+              $(".box4").show();
+            },
+            200: function () {
+              $(".box4").hide();
+              $(".box3").show();
+              $(".box2").show();
+            },
+          },
+          success: function (data) {
+            var name = data.name;
+            $("#name").text("City Name :" + name);
+            var temp = data.main.temp;
+            $("#temp").text("Temperature : " + temp);
+            var humid = data.main.humidity;
+            $("#humid").text("Humidity : " + humid);
+            var windspd = data.wind.speed;
+            $("#wind").text("Wind Speed :" + windspd);
+            // var a = data.coord.lat;
+            var country = data.sys.country;
+            $("#country").text("Country :" + country);
+            var pressure = data.main.pressure;
+            $("#pressure").text("Pressure : " + pressure);
+          },
+        });
+      } else {
+        $("#error").html("Fields are not be empty");
+      }
+    });
+  });
+</script>
